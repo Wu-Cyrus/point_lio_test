@@ -1,0 +1,66 @@
+/**:
+    ros__parameters:
+        common:
+            lid_topic: "/livox/lidar" #订阅点云话题名
+            imu_topic: "/livox/imu" #订阅 IMU 话题名
+            con_frame: false # 是否把多帧 LiDAR 合成一帧（堆叠增强稠密度，但会引入运动畸变风险、延迟增加）。
+            con_frame_num: 1 # the number of frames combined
+            cut_frame: false # true: if you need to cut one LiDAR frame into several subframes
+            cut_frame_time_interval: 0.1 # should be integral fraction of 1 / LiDAR frequency
+            time_lag_imu_to_lidar: 0.0 # Time offset between LiDAR and IMU calibrated by other algorithms, e.g., LI-Init (find in Readme),
+            # the timestamp of IMU is transferred from the current timeline to LiDAR's timeline by subtracting this value
+            use_prior_map: true #是否使用先验地图
+            prior_map_path: "/home/wc/practice/locate_ws/src/point-lio-dtc-master/PCD/scans_2.pcd" #"/home/dtc/rm_location/src/robots_localization/PCD/2025-08-18_09-54-00_scans.pcd" #"/home/dtc/rc_2025_ros2/src/point_lio_ros2/PCD/316.pcd" #"/home/dtc/rm_location/src/robots_localization/PCD/2025-08-18_09-54-00_scans.pcd" #"/home/dtc/rc_2025_ros2/src/point_lio_ros2/PCD/scans.pcd"
+            yaw_range: [-0.5,0.1,0.5] #yaw 搜索范围
+
+        preprocess:
+            lidar_type: 1      # 1 for Livox serials LiDAR, 2 for Velodyne LiDAR, 3 for ouster LiDAR
+            scan_line: 4     #点云线数/扫描线配置
+            timestamp_unit: 3   # the unit of time/t field in the PointCloud2 rostopic: 0-second, 1-milisecond, 2-microsecond, 3-nanosecond.
+            blind: 0.5  #近距离盲区（小于该距离的点丢弃），避免近距离噪声/自反射。
+
+        mapping:
+            imu_en: true #是否启用 IMU。
+            start_in_aggressive_motion: false # 如果一启动就剧烈运动，通常要提供更可靠的初始重力/姿态，否则初始化会乱。
+            extrinsic_est_en: false # 是否在线估计外参；强烈运动时反而可能更不稳，所以注释建议 aggressive motion 时设 false。
+            imu_time_inte: 0.005 # IMU 积分步长=1/IMU频率
+            satu_acc: 3.0 # the saturation value of IMU's acceleration. not related to the units
+            satu_gyro: 35.0 # the saturation value of IMU's angular velocity. not related to the units
+            acc_norm: 1.0 # 加速度单位归一化（用 g 就填 1.0，用 m/s² 就填 9.81）
+            lidar_meas_cov: 0.01 # LiDAR 测量噪声（更小=更信 LiDAR）
+            acc_cov_output: 500.0
+            gyr_cov_output: 1000.0
+            b_acc_cov: 0.0001
+            b_gyr_cov: 0.0001
+            imu_meas_acc_cov: 0.01 #0.1 # 2
+            imu_meas_omg_cov: 0.01 #0.1 # 2
+            gyr_cov_input: 0.01 # for IMU as input model
+            acc_cov_input: 0.1 # for IMU as input model
+            plane_thr: 0.1 # 0.05, the threshold for plane criteria, the smaller, the flatter a plane
+            match_s: 81.0
+            fov_degree: 360.0
+            det_range: 100.0
+            gravity_align: true # true to align the z axis of world frame with the direction of gravity, and the gravity direction should be specified below
+            gravity: [ 0.0, 0.0, -9.810 ] # [0.0, 9.810, 0.0] # gravity to be aligned
+            gravity_init: [ 0.0, 0.0, -9.810 ] # [0.0, 9.810, 0.0] # # preknown gravity in the first IMU body frame, use when imu_en is false or start from a non-stationary state
+            extrinsic_T: [ -0.011, -0.02329, 0.04412 ]
+            extrinsic_R: [ 1.0, 0.0, 0.0,
+                           0.0, 1.0, 0.0,
+                           0.0, 0.0, 1.0 ]
+        prior:                          #先验位姿态，用于初始化
+            prior_T: [0.0 ,0.0, 0.0]
+            prior_R: [1.0 ,0.0, 0.0,
+                        0.0 ,1.0, 0.0,
+                        0.0 ,0.0, 1.0]
+        odometry:
+            publish_odometry_without_downsample: false
+
+        publish:
+            path_en: true                 # false: close the path output
+            scan_publish_en: true         # false: close all the point cloud output
+            scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+
+        pcd_save:
+            pcd_save_en: false #是否保存先验地图
+            interval: 3000                # how many LiDAR frames saved in each pcd file;
+            # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.

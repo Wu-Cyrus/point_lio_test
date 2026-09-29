@@ -1,0 +1,2 @@
+Invoking command in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/haoder/物块位置/dev_ws/src/point-lio-dtc-master -DCMAKE_INSTALL_PREFIX=/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio
+Invoked command in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/haoder/物块位置/dev_ws/src/point-lio-dtc-master -DCMAKE_INSTALL_PREFIX=/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio

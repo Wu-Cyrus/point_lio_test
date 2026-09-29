@@ -1,0 +1,104 @@
+[0.007s] Invoking command in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/haoder/物块位置/dev_ws/src/point-lio-dtc-master -DCMAKE_INSTALL_PREFIX=/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.096s] -- The CXX compiler identification is GNU 11.4.0
+[0.102s] -- Detecting C compiler ABI info
+[0.157s] -- Detecting C compiler ABI info - done
+[0.162s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.162s] -- Detecting C compile features
+[0.162s] -- Detecting C compile features - done
+[0.165s] -- Detecting CXX compiler ABI info
+[0.227s] -- Detecting CXX compiler ABI info - done
+[0.233s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.233s] -- Detecting CXX compile features
+[0.233s] -- Detecting CXX compile features - done
+[0.234s] -- Current CPU architecture: x86_64
+[0.239s] -- Processor number:  32
+[0.239s] -- core for MP:  3
+[0.240s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.619s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.665s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.685s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.687s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.691s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.697s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.704s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.725s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.726s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.735s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.739s] -- Looking for pthread.h
+[0.783s] -- Looking for pthread.h - found
+[0.783s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.828s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.829s] -- Found Threads: TRUE  
+[0.854s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.855s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.861s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.872s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.881s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.905s] -- Checking for module 'eigen3'
+[0.915s] --   Found eigen3, version 3.4.0
+[0.940s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.940s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.959s] -- Checking for module 'flann'
+[0.969s] --   Found flann, version 1.9.1
+[1.001s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.001s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.567s] -- Checking for module 'libusb-1.0'
+[1.578s] --   Found libusb-1.0, version 1.0.25
+[1.607s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.608s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.651s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.735s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.739s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.744s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.824s] -- Found Qhull version 8.0.2
+[1.906s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.985s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.986s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.986s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.987s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.987s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.988s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.988s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[1.988s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[1.988s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.989s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.989s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.990s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.990s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.991s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[1.991s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[1.992s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[1.992s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[1.993s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[1.994s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[1.994s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[1.994s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[1.995s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[1.995s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[1.995s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[1.996s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.013s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.013s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.014s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.058s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.074s] [31mCMake Error at CMakeLists.txt:50 (find_package):
+[2.074s]   By not providing "Findlivox_ros_driver2.cmake" in CMAKE_MODULE_PATH this
+[2.074s]   project has asked CMake to find a package configuration file provided by
+[2.074s]   "livox_ros_driver2", but CMake did not find one.
+[2.074s] 
+[2.074s]   Could not find a package configuration file provided by "livox_ros_driver2"
+[2.074s]   with any of the following names:
+[2.074s] 
+[2.074s]     livox_ros_driver2Config.cmake
+[2.074s]     livox_ros_driver2-config.cmake
+[2.074s] 
+[2.074s]   Add the installation prefix of "livox_ros_driver2" to CMAKE_PREFIX_PATH or
+[2.074s]   set "livox_ros_driver2_DIR" to a directory containing one of the above
+[2.075s]   files.  If "livox_ros_driver2" provides a separate development package or
+[2.075s]   SDK, be sure it has been installed.
+[2.075s] 
+[2.075s] [0m
+[2.075s] -- Configuring incomplete, errors occurred!
+[2.075s] See also "/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio/CMakeFiles/CMakeOutput.log".
+[2.085s] Invoked command in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/haoder/物块位置/dev_ws/src/point-lio-dtc-master -DCMAKE_INSTALL_PREFIX=/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio

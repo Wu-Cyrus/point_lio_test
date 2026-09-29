@@ -1,0 +1,78 @@
+[0.074s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.074s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x74264a40b5b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74264a40b0a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74264a40b0a0>>)[0m
+[0.236s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.236s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.237s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.237s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.237s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.237s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.237s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master'
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.237s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.249s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage '.' with type 'ros.ament_cmake' and name 'point_lio'[0m
+[0.249s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.249s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.249s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.249s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.249s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.259s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.259s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.261s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 284 installed packages in /opt/ros/humble[0m
+[0.262s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.286s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'cmake_args' from command line to 'None'
+[0.286s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'cmake_target' from command line to 'None'
+[0.286s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.286s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'cmake_clean_cache' from command line to 'False'
+[0.286s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'cmake_clean_first' from command line to 'False'
+[0.286s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'cmake_force_configure' from command line to 'False'
+[0.286s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'ament_cmake_args' from command line to 'None'
+[0.287s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'catkin_cmake_args' from command line to 'None'
+[0.287s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'point_lio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.287s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'point_lio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio', 'merge_install': False, 'path': '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master', 'symlink_install': False, 'test_result_base': None}[0m
+[0.287s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.287s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.288s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master' with build type 'ament_cmake'
+[0.288s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master'
+[0.289s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.289s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.289s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.295s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/haoder/物块位置/dev_ws/src/point-lio-dtc-master -DCMAKE_INSTALL_PREFIX=/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio[0m
+[2.373s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/build/point_lio' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/haoder/物块位置/dev_ws/src/point-lio-dtc-master -DCMAKE_INSTALL_PREFIX=/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio[0m
+[2.382s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(point_lio)
+[2.383s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio' for CMake module files
+[2.384s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio' for CMake config files
+[2.384s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/bin'
+[2.384s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/lib/pkgconfig/point_lio.pc'
+[2.384s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/lib/python3.10/site-packages'
+[2.384s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/bin'
+[2.384s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/share/point_lio/package.ps1'
+[2.385s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/share/point_lio/package.dsv'
+[2.385s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/share/point_lio/package.sh'
+[2.385s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/share/point_lio/package.bash'
+[2.385s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/share/point_lio/package.zsh'
+[2.386s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/point_lio/share/colcon-core/packages/point_lio)
+[2.396s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[2.396s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[2.396s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '1'[0m
+[2.396s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[2.399s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.399s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.399s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[2.405s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[2.405s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/local_setup.ps1'
+[2.406s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/_local_setup_util_ps1.py'
+[2.406s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/setup.ps1'
+[2.407s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/local_setup.sh'
+[2.407s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/_local_setup_util_sh.py'
+[2.407s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/setup.sh'
+[2.407s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/local_setup.bash'
+[2.408s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/setup.bash'
+[2.408s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/local_setup.zsh'
+[2.408s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/haoder/物块位置/dev_ws/src/point-lio-dtc-master/install/setup.zsh'
